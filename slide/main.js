@@ -143,5 +143,5 @@ function check() {
 }
 
 function back() {
-  window.location.href= "/card.html";
+  window.location.href= "/MINI-ARCADE/card.html";
 }
