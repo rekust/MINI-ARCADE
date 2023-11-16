@@ -1,0 +1,84 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+*::-webkit-scrollbar{
+  display: none;
+}
+
+body {
+  background-color: #ccc;
+}
+
+.selections {
+  display: flex;
+  justify-content: center;
+}
+
+.selection {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 15vmin;
+  transition: 100ms;
+}
+
+.selection:hover {
+  transform: scale(1.2);
+}
+
+.results {
+  font-size: 5vmin;
+  font-weight: bold;
+  margin-top: 1vmin;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.result-score {
+  font-size: 3vmin;
+  font-weight: bold;
+  margin-left: 1vmin;
+  color: #333;
+}
+
+.result-selection {
+  margin-top: 2vmin;
+  opacity: 0.5;
+}
+
+.result-selection.winner {
+  opacity: 1;
+  font-size: 7vmin;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#back, #restart {
+  margin: 5vmin;
+  border: none;
+  border-radius: 50%;
+  width: 10vmin;
+  height: 10vmin;
+}
+
+#back:hover, #restart:hover {
+  background-color: #f7f7f7;
+}
+
+svg {
+  max-width: 100%;
+  height: auto;
+}

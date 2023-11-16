@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Inter:wght@500;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="card.css" />
+  <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+
+    <title>Games</title>
+  </head>
+
+  <body>
+    <div class="grid">
+      <div class="grid-item">
+        <div class="card">
+          <img class="card-img" src="images\RPS.png" />
+          <div class="card-content">
+            <h1 class="card-header">ROCK-PAPER-SCISSORS</h1>
+            <p class="card-text">
+              Rock Paper Scissors is an instransitive hand game, usually palyed
+              between 2 people, in which each player simultaneously forms on of
+              the three shapes with an outstretched hand. The three shapes are
+              Rock, Paper and Scissor.
+            </p>
+            <button class="card-btn1" id="cbtn1">PLAY</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <div class="card">
+          <img class="card-img" src="images/2048.png" />
+          <div class="card-content">
+            <h1 class="card-header">2048</h1>
+            <p class="card-text">
+              2048 is a single-player sliding title puzzle video game written by
+              Italian web developer Gabriele Cirulli The objective is to slide
+              numbered tiles on a grid to combine them to create a tile with the
+              number 2048.
+            </p>
+            <button class="card-btn2" id="cbtn2">PLAY</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <div class="card">
+          <img class="card-img" src="images/ping.png" />
+          <div class="card-content">
+            <h1 class="card-header">PING PONG</h1>
+            <p class="card-text">
+              Ping Pong is a table-tennis themed arcade sports video game, first
+              manufactured by Atari. It was one of the earliest arcade video
+              games. The player controls a game paddle by moving it vertically
+              across the left or right side of the screen.
+            </p>
+            <button class="card-btn3" id="cbtn3">PLAY</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <div class="card">
+          <img class="card-img" src="images/dino.png" />
+          <div class="card-content">
+            <h1 class="card-header">DINO RUN</h1>
+            <p class="card-text">
+              The Dinosaur Game also known as the Chrome Dino is a browser game
+              developed by Google and built into the Google Chrome web browser.
+              The player guides a pixelated Tyrannosaurus Rex across a side
+              scrolling landscape, avoiding obstacles to achieve a higer score.
+            </p>
+            <button class="card-btn4" id="cbtn4">PLAY</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <div class="card">
+          <img class="card-img" src="images/slide.png" />
+          <div class="card-content">
+            <h1 class="card-header">SLIDE</h1>
+            <p class="card-text">
+              Enjoy a challenging slide puzzle game that tests your wit and spatial skills. 
+              Rearrange shuffled tiles to reveal a captivating image.
+              This game offers endless entertainment and sharpens your problem-solving abilities.
+            </p>
+            <button onclick="slide()" class="card-btn5" id="cbtn5">PLAY</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const btn1 = document.querySelector("#cbtn1");
+      btn1.addEventListener("click", function () {
+        window.location.href = "rockPaperScissors.html";
+      });
+
+      const btn2 = document.querySelector("#cbtn2");
+      btn2.addEventListener("click", function () {
+        window.location.href = "2048.html";
+      });
+
+      const btn3 = document.querySelector("#cbtn3");
+      btn3.addEventListener("click", function () {
+        window.location.href = "pingPong.html";
+      });
+
+      const btn4 = document.querySelector("#cbtn4");
+      btn4.addEventListener("click", function () {
+        window.location.href = "dinoIndex.html";
+      });
+
+      function slide() {
+        window.location.href = "/slide/index.html";
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/icon.png" type="image/x-icon">
+    <title>Slide Puzzle</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <img id="title" src="./imgs/One-Piece-Anime-Logo-PNG.png" alt="logo" />
+      <div class="game">
+        <div id="ref">
+          <img id="complete" src="./imgs/luffy complete.png" alt="reference" />
+        </div>
+        <div id="board"></div>
+      </div>
+      <h1>Turns: <span id="turns">0</span></h1>
+      <div class="buttons">
+        <button id="back" onclick="back()"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="22" viewBox="0 0 24 24" fill="none" stroke="#dbf8fd" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H6M12 5l-7 7 7 7"/></svg></button>
+        <button id="sol" onclick="solution()">Solution</button>
+      </div>
+    </div>
+  </body>
+</html>
