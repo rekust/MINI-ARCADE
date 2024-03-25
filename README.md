@@ -14,7 +14,7 @@ Welcome to our Mini Arcade project – your one-stop destination for a nostalgic
 
 ## How to Play:
 
-1. **Visit Our Website:** Simply navigate to our website to access the Mini Arcade.
+1. **Visit Our Website:** Simply navigate to our [website](https://rekust.github.io/MINI-ARCADE/) to access the Mini Arcade.
 
 2. **Choose Your Game:** Browse through our collection and pick the game that strikes your fancy.
 
